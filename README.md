@@ -1,4 +1,4 @@
-Yinghua's Personal Website, built using React
+Yinghua's Personal Website, built using React:electron:.
 
 ## Available Scripts
 
