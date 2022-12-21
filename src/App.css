@@ -369,7 +369,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
-/* .project {
+.project {
     padding: 80px 0;
     position: relative;
     background-color: black;
@@ -492,7 +492,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 35%;
     right: 0;
     z-index: -4;
-} */
+}
 
 /************ Contact Css ************/
 /* .contact {
