@@ -279,7 +279,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: inline-block;
 }
 .banner h1 {
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1;
@@ -288,7 +288,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner p {
     color: #b8b8b8;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 96%;
@@ -329,11 +329,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
-/* .skill {
+.skill {
     padding: 0 0 50px 0;
     position: relative;
 }
-.skill-bx {
+.skill-box {
     background: #151515;
     border-radius: 64px;
     text-align: center;
@@ -366,7 +366,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     bottom: 0;
     width: 40%;
     z-index: -4;
-} */
+}
 
 /************ Projects Css ************/
 /* .project {
