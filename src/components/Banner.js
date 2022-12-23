@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
+import TrackVisibility from "react-on-screen";
+import "animate.css";
 
 export const Banner = () => {
     // This is how we declare a state variable using Hook
@@ -59,27 +61,44 @@ export const Banner = () => {
             <Container>
                 <Row className="align-item-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">
-                            Welcome to my Personal Website
-                        </span>
-                        <h1>{`Hi I'm Yinghua Zhou,`}</h1>
-                        <h1>
-                            {`A `}
-                            <span className="wrap">{text}</span>
-                        </h1>
-                        <p>
-                            I'm a recent Bachelor of Computer Science graduate
-                            from Monash University, and a current Master of
-                            Information Technology Student at the University of
-                            Melbourne, Specialising in AI.
-                        </p>
-                        <p>
-                            I have a strong passion in Algorithms and Data
-                            Structures as well as state-of-the-art technologies!
-                        </p>
-                        <button onClick={() => console.log("connect")}>
-                            Contact Me <ArrowRightCircle size={25} />
-                        </button>
+                        <TrackVisibility>
+                            {({ isVisible }) => (
+                                <div
+                                    className={
+                                        isVisible
+                                            ? "animate__animated animate__fadeIn"
+                                            : ""
+                                    }
+                                >
+                                    <span className="tagline">
+                                        Welcome to my Personal Website
+                                    </span>
+                                    <h1>{`Hi I'm Yinghua Zhou,`}</h1>
+                                    <h1>
+                                        {`A `}
+                                        <span className="wrap">{text}</span>
+                                    </h1>
+                                    <p>
+                                        I'm a recent Bachelor of Computer
+                                        Science graduate from Monash University,
+                                        and a current Master of Information
+                                        Technology Student at the University of
+                                        Melbourne, Specialising in AI.
+                                    </p>
+                                    <p>
+                                        I have a strong passion in Algorithms
+                                        and Data Structures as well as
+                                        state-of-the-art technologies!
+                                    </p>
+                                    <button
+                                        onClick={() => console.log("connect")}
+                                    >
+                                        Contact Me{" "}
+                                        <ArrowRightCircle size={25} />
+                                    </button>
+                                </div>
+                            )}
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Image" />

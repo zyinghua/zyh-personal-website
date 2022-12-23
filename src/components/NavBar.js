@@ -33,7 +33,7 @@ export const NavBar = () => {
             <Container>
                 <Navbar.Brand href="#home">
                     <span>
-                        <a className="nav-title">YINGHUA ZHOU</a>
+                        <a className="site-txt-logo">YINGHUA ZHOU</a>
                     </span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -64,17 +64,6 @@ export const NavBar = () => {
                             Skills
                         </Nav.Link>
                         <Nav.Link
-                            href="#blogs"
-                            className={
-                                activeLink === "blogs"
-                                    ? "active navbar-link"
-                                    : "navbar-link"
-                            }
-                            onClick={() => setActiveLink("blogs")}
-                        >
-                            Blogs
-                        </Nav.Link>
-                        <Nav.Link
                             href="#projects"
                             className={
                                 activeLink === "projects"
@@ -84,6 +73,17 @@ export const NavBar = () => {
                             onClick={() => setActiveLink("projects")}
                         >
                             Projects
+                        </Nav.Link>
+                        <Nav.Link
+                            href="#blogs"
+                            className={
+                                activeLink === "blogs"
+                                    ? "active navbar-link"
+                                    : "navbar-link"
+                            }
+                            onClick={() => setActiveLink("blogs")}
+                        >
+                            Blogs
                         </Nav.Link>
                     </Nav>
                     <span className="navbar-text">
@@ -109,12 +109,11 @@ export const NavBar = () => {
                                 />
                             </a>
                         </div>
-                        <button
-                            className="contact"
-                            onClick={() => console.log("connect")}
-                        >
-                            <span>Contact Me</span>
-                        </button>
+                        <a href="#contact">
+                            <button>
+                                <span>Contact Me</span>
+                            </button>
+                        </a>
                     </span>
                 </Navbar.Collapse>
             </Container>
