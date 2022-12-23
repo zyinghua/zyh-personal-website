@@ -90,12 +90,17 @@ export const Banner = () => {
                                         and Data Structures as well as
                                         state-of-the-art technologies!
                                     </p>
-                                    <button
-                                        onClick={() => console.log("connect")}
+                                    <a
+                                        href="#contact"
+                                        style={{
+                                            "text-decoration": "none",
+                                        }}
                                     >
-                                        Contact Me{" "}
-                                        <ArrowRightCircle size={25} />
-                                    </button>
+                                        <button>
+                                            Contact Me
+                                            <ArrowRightCircle size={25} />
+                                        </button>
+                                    </a>
                                 </div>
                             )}
                         </TrackVisibility>
