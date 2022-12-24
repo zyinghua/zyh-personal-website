@@ -37,7 +37,7 @@ export const NavBar = () => {
                     </span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon" />
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -88,21 +88,19 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href={githubLink}>
+                            <a href={githubLink} className="github-icon">
                                 <img
                                     src={github}
                                     alt="Link to Yinghua's Github site"
-                                    className="black-svg-icon"
                                 />
                             </a>
-                            <a href={leetcodeLink}>
+                            <a href={leetcodeLink} className="leetcode-icon">
                                 <img
                                     src={leetcode}
                                     alt="Link to Yinghua's Leetcode site"
-                                    className="black-svg-icon"
                                 />
                             </a>
-                            <a href={linkedinLink}>
+                            <a href={linkedinLink} className="linkedin-icon">
                                 <img
                                     src={linkedIn}
                                     alt="Link to Yinghua's Linkedin"

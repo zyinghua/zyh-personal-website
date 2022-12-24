@@ -19,28 +19,26 @@ export const Footer = () => {
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <div className="social-icon">
-                            <a href={githubLink}>
+                            <a href={githubLink} className="github-icon">
                                 <img
                                     src={github}
                                     alt="Link to Yinghua's Github site"
-                                    className="black-svg-icon"
                                 />
                             </a>
-                            <a href={leetcodeLink}>
+                            <a href={leetcodeLink} className="leetcode-icon">
                                 <img
                                     src={leetcode}
                                     alt="Link to Yinghua's Leetcode site"
-                                    className="black-svg-icon"
                                 />
                             </a>
-                            <a href={linkedinLink}>
+                            <a href={linkedinLink} className="linkedin-icon">
                                 <img
                                     src={linkedIn}
                                     alt="Link to Yinghua's Linkedin"
                                 />
                             </a>
                         </div>
-                        <p>CopyRight 2022. All Right Reserved.</p>
+                        <p>Copyright 2023. All Right Reserved.</p>
                     </Col>
                 </Row>
             </Container>
