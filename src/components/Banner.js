@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/programmer.gif";
+import hand from "../assets/img/hand.svg";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 
@@ -73,17 +74,26 @@ export const Banner = () => {
                                     <span className="tagline">
                                         Welcome to my Personal Website
                                     </span>
-                                    <h1>{`Hi I'm Yinghua Zhou,`}</h1>
+                                    <h1>
+                                        {`Hi I'm Yinghua Zhou `}
+                                        <img
+                                            src={hand}
+                                            className="banner-intro-hand-icon"
+                                        />
+                                        {","}
+                                    </h1>
                                     <h1>
                                         {`A `}
                                         <span className="wrap">{text}</span>
                                     </h1>
                                     <p>
-                                        I'm a recent Bachelor of Computer
-                                        Science graduate from Monash University,
-                                        and a current Master of Information
-                                        Technology Student at the University of
-                                        Melbourne, Specialising in AI.
+                                        I started learning how to code when I
+                                        was 16. Now I'm a recent Bachelor of
+                                        Computer Science graduate from Monash
+                                        University, and a current Master of
+                                        Information Technology Student at the
+                                        University of Melbourne, Specialising in
+                                        AI.
                                     </p>
                                     <p>
                                         I have a strong passion in Algorithms

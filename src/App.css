@@ -39,7 +39,7 @@ body {
         #f9feff,
         #ffffff
     ) !important;
-    color: #fff !important;
+    color: rgb(34, 13, 51) !important;
     font-family: "Centra" !important;
 }
 
@@ -100,6 +100,7 @@ p.success {
 p.danger {
     color: red;
 }
+
 /************ Navbar Css ************/
 nav.navbar {
     padding: 18px 0;
@@ -175,7 +176,8 @@ span.navbar-text {
     z-index: 1;
     transition: 0.3s ease-in-out;
 }
-.social-icon a:hover img {
+.social-icon a:hover img,
+.nav-contact-me-btn:hover img {
     filter: invert(99%) sepia(22%) saturate(385%) hue-rotate(183deg)
         brightness(113%) contrast(100%);
 }
@@ -184,7 +186,7 @@ span.navbar-text {
     color: #121212;
     border: 1px solid #121212;
     border-radius: 12px;
-    padding: 12px 32px;
+    padding: 12px 12px;
     font-size: 18px;
     margin-left: 18px;
     position: relative;
@@ -267,6 +269,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 28px;
     font-family: "Courier New";
 }
+.nav-contact-me-btn img {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+}
 
 /************ Banner Css ************/
 .banner {
@@ -278,19 +285,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background-repeat: no-repeat;
 }
 .banner .tagline {
+    width: 400px;
+    height: 68px;
     font-weight: 700;
     letter-spacing: 0.8px;
-    padding: 8px 10px;
+    padding: 20px 28px;
     background: linear-gradient(
-        90.21deg,
-        rgba(74, 47, 189, 0.5) -5.91%,
-        rgba(170, 54, 124, 0.5) 111.58%
+        to right top,
+        #5f23cf5e,
+        #7a23d1,
+        #9224d2c4,
+        #a526d3d0,
+        #b929d4
     );
+
     border: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 20px;
     margin-bottom: 16px;
     display: inline-block;
+    color: #f5f3fa;
+    animation: tagline_animate 3s ease-in-out infinite 1s;
 }
+
+@keyframes tagline_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 70% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
 .banner h1 {
     font-size: 55px;
     font-weight: 700;
@@ -300,14 +328,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: block;
 }
 .banner p {
-    color: #b8b8b8;
+    color: #380606;
     font-size: 17px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 96%;
 }
 .banner button {
-    color: #fff;
     font-weight: 700;
     font-size: 20px;
     margin-top: 60px;
@@ -328,17 +355,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-0px);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(0px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-0px);
     }
 }
 .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
+}
+.banner-intro-hand-icon {
+    width: 55px;
+    height: 55px;
+    margin-top: -18px;
 }
 
 /************ Skills Css ************/

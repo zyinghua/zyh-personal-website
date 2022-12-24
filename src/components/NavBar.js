@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import github from "../assets/img/github.svg";
 import leetcode from "../assets/img/leetcode.svg";
 import linkedIn from "../assets/img/linkedin.svg";
+import send from "../assets/img/send.svg";
 
 export const NavBar = () => {
     const linkedinLink = "https://www.linkedin.com/in/yinghua-zhou-7b95b521a/";
@@ -85,6 +86,17 @@ export const NavBar = () => {
                         >
                             Blogs
                         </Nav.Link>
+                        <Nav.Link
+                            href="#photos"
+                            className={
+                                activeLink === "photos"
+                                    ? "active navbar-link"
+                                    : "navbar-link"
+                            }
+                            onClick={() => setActiveLink("photos")}
+                        >
+                            Photos
+                        </Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
@@ -108,8 +120,9 @@ export const NavBar = () => {
                             </a>
                         </div>
                         <a href="#contact">
-                            <button>
+                            <button className="nav-contact-me-btn">
                                 <span>Contact Me</span>
+                                <img src={send} />
                             </button>
                         </a>
                     </span>
