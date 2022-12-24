@@ -15,7 +15,6 @@
     font-weight: 400;
 }
 
-/************ Default Css ************/
 * {
     margin: 0;
     padding: 0;
@@ -99,4 +98,12 @@ p.success {
 
 p.danger {
     color: red;
+}
+
+.site-txt-logo {
+    color: #121212 !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "Courier New";
 }

@@ -1,152 +1,66 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
+import { Container, Row, Col } from "react-bootstrap";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import meter1 from "../assets/img/meter1.svg";
+import meter2 from "../assets/img/meter2.svg";
+import meter3 from "../assets/img/meter3.svg";
 
 export const Projects = () => {
-    const projects = [
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+    const responsive = {
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5,
         },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
         },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
         },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
         },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
-        },
-    ];
+    };
 
     return (
-        <section className="project" id="projects">
+        <section className="projects" id="projects">
             <Container>
                 <Row>
-                    <Col size={12}>
-                        <TrackVisibility>
-                            {({ isVisible }) => (
-                                <div
-                                    className={
-                                        isVisible
-                                            ? "animate__animated animate__slideInUp"
-                                            : ""
-                                    }
-                                >
-                                    <h2>Projects</h2>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the
-                                        printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard
-                                        dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type
-                                        and scrambled it to make a type specimen
-                                        book.
-                                    </p>
-                                    <Tab.Container
-                                        id="projects-tabs"
-                                        defaultActiveKey="first"
-                                    >
-                                        <Nav
-                                            variant="pills"
-                                            className="nav-pills mb-5 justify-content-center align-items-center"
-                                            id="pills-tab"
-                                        >
-                                            <Nav.Item>
-                                                <Nav.Link eventKey="first">
-                                                    Tab 1
-                                                </Nav.Link>
-                                            </Nav.Item>
-                                            <Nav.Item>
-                                                <Nav.Link eventKey="second">
-                                                    Tab 2
-                                                </Nav.Link>
-                                            </Nav.Item>
-                                            <Nav.Item>
-                                                <Nav.Link eventKey="third">
-                                                    Tab 3
-                                                </Nav.Link>
-                                            </Nav.Item>
-                                        </Nav>
-                                        <Tab.Content
-                                            id="slideInUp"
-                                            className={
-                                                isVisible
-                                                    ? "animate__animated animate__slideInUp"
-                                                    : ""
-                                            }
-                                        >
-                                            <Tab.Pane eventKey="first">
-                                                <Row>
-                                                    {projects.map(
-                                                        (project, index) => {
-                                                            return (
-                                                                <ProjectCard
-                                                                    key={index}
-                                                                    {...project}
-                                                                />
-                                                            );
-                                                        }
-                                                    )}
-                                                </Row>
-                                            </Tab.Pane>
-                                            <Tab.Pane eventKey="second">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Cumque quam, quod
-                                                    neque provident velit, rem
-                                                    explicabo excepturi id illo
-                                                    molestiae blanditiis,
-                                                    eligendi dicta officiis
-                                                    asperiores delectus quasi
-                                                    inventore debitis quo.
-                                                </p>
-                                            </Tab.Pane>
-                                            <Tab.Pane eventKey="third">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Cumque quam, quod
-                                                    neque provident velit, rem
-                                                    explicabo excepturi id illo
-                                                    molestiae blanditiis,
-                                                    eligendi dicta officiis
-                                                    asperiores delectus quasi
-                                                    inventore debitis quo.
-                                                </p>
-                                            </Tab.Pane>
-                                        </Tab.Content>
-                                    </Tab.Container>
-                                </div>
-                            )}
-                        </TrackVisibility>
+                    <Col>
+                        <h2>Projects</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.<br></br> Lorem Ipsum has been
+                            the industry's standard dummy text.
+                        </p>
+                        <Carousel
+                            responsive={responsive}
+                            infinite={true}
+                            className="owl-carousel owl-theme project-slider"
+                        >
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Applied Algorithms and Data Structures</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>Front-end Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image" />
+                                <h5>Back-end Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Artificial Intelligence (Beginner)</h5>
+                            </div>
+                        </Carousel>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
         </section>
     );
 };

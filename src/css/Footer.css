@@ -1,7 +1,6 @@
-/************ Footer Css ************/
 .footer {
     padding: 36px 0 36px 0;
-    background-image: url("../assets/img/footer-bg.png");
+    background-image: url("../assets/img/footer-bg.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,7 +8,7 @@
 .footer p {
     font-weight: 400;
     font-size: 14px;
-    color: #b8b8b8;
+    color: #575252;
     letter-spacing: 0.5px;
     margin-top: 20px;
 }
