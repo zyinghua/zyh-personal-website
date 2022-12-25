@@ -50,7 +50,7 @@ export const Skills = () => {
                                 <div
                                     className={
                                         isVisible
-                                            ? "animate__animated animate__fadeIn skill-box"
+                                            ? "animate__animated animate__pulse skill-box"
                                             : "skill-box"
                                     }
                                 >
@@ -80,14 +80,7 @@ export const Skills = () => {
                                                 </Nav.Link>
                                             </Nav.Item>
                                         </Nav>
-                                        <Tab.Content
-                                            id="slideInUp"
-                                            className={
-                                                isVisible
-                                                    ? "animate__animated animate__slideInUp"
-                                                    : ""
-                                            }
-                                        >
+                                        <Tab.Content>
                                             <Tab.Pane eventKey="front-end">
                                                 <Row>
                                                     {projects.map(
