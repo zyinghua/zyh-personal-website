@@ -1,6 +1,13 @@
 .footer {
     padding: 36px 0 36px 0;
-    background-image: url("../assets/img/footer-bg.jpg");
+    background-image: linear-gradient(
+        to bottom,
+        #f2f6ff,
+        #effaff,
+        #f1fcfc,
+        #f6fefa,
+        #fdfff9
+    );
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

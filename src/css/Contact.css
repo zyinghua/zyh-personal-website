@@ -1,12 +1,8 @@
 .contact {
-    background: linear-gradient(
-        to right top,
-        #edffe7,
-        #e5fffa,
-        #ecffff,
-        #f9feff,
-        #ffffff
-    );
+    background-image: url("../assets/img/footer-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 60px 0 200px 0;
 }
 .contact img {
@@ -50,7 +46,21 @@
 .contact form button {
     font-weight: 700;
     color: #000;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+        to right top,
+        #f2b6cc,
+        #f4b9d3,
+        #f5bcda,
+        #f6bfe2,
+        #f6c2e9,
+        #f9c5e8,
+        #fcc8e7,
+        #ffcbe6,
+        #ffcfde,
+        #ffd4d9,
+        #fed9d8,
+        #f9dfd9
+    );
     padding: 14px 48px;
     font-size: 18px;
     margin-top: 25px;

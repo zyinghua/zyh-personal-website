@@ -1,7 +1,14 @@
 .banner {
     margin-top: 0;
     padding: 260px 0 100px 0;
-    background-image: url("../assets/img/banner-bg.jpg");
+    background: linear-gradient(
+        to bottom,
+        #c8f2f4,
+        #d6f6f0,
+        #e5f9ef,
+        #f3fcf2,
+        #fdfff9
+    );
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;

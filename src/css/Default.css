@@ -30,14 +30,7 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
-    background: linear-gradient(
-        to right top,
-        #edffe7,
-        #e5fffa,
-        #ecffff,
-        #f9feff,
-        #ffffff
-    ) !important;
+    background: rgb(253, 255, 249) !important;
     color: rgb(34, 13, 51) !important;
     font-family: "Centra" !important;
 }

@@ -44,6 +44,7 @@ export const Banner = () => {
         setText(updateText);
 
         if (isDeleting) {
+            // If currently doing deletion, next tick() will have half less time.
             setDelta((prevDelta) => prevDelta / 2);
         }
 
