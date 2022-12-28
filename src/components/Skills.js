@@ -50,8 +50,8 @@ export const Skills = () => {
                                 <div
                                     className={
                                         isVisible
-                                            ? "animate__animated animate__pulse skill-box"
-                                            : "skill-box"
+                                            ? "animate__animated animate__pulse"
+                                            : ""
                                     }
                                 >
                                     <h2>Skills</h2>

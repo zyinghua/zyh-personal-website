@@ -27,40 +27,44 @@ export const Projects = () => {
 
     return (
         <section className="projects" id="projects">
-            <Container>
-                <Row>
-                    <Col>
-                        <h2>Projects</h2>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.<br></br> Lorem Ipsum has been
-                            the industry's standard dummy text.
-                        </p>
-                        <Carousel
-                            responsive={responsive}
-                            infinite={true}
-                            className="owl-carousel owl-theme project-slider"
-                        >
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Applied Algorithms and Data Structures</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Front-end Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Back-end Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Artificial Intelligence (Beginner)</h5>
-                            </div>
-                        </Carousel>
-                    </Col>
-                </Row>
-            </Container>
+            <div className="project-box">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2>Projects</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry.<br></br> Lorem Ipsum
+                                has been the industry's standard dummy text.
+                            </p>
+                            <Carousel
+                                responsive={responsive}
+                                infinite={true}
+                                className="owl-carousel owl-theme project-slider"
+                            >
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>
+                                        Applied Algorithms and Data Structures
+                                    </h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image" />
+                                    <h5>Front-end Development</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter3} alt="Image" />
+                                    <h5>Back-end Development</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>Artificial Intelligence (Beginner)</h5>
+                                </div>
+                            </Carousel>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
         </section>
     );
 };
