@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact.svg";
 
@@ -20,11 +20,46 @@ export const Contact = () => {
 
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [btnText, setBtnText] = useState("Send");
+    const [isSending, setIsSending] = useState(false);
     const [status, setStatus] = useState({});
+    const delta = 300;
+    const [dotNum, setDotNum] = useState(0);
 
     const handleSubmit = async (e) => {
+        // Check invalid empty fields
+        if (formDetails.firstName == "") {
+            setStatus({
+                success: false,
+                message: "Please fill in your 'First Name' above.",
+            });
+
+            return;
+        } else if (formDetails.email == "") {
+            setStatus({
+                success: false,
+                message: "Please fill in your 'Email Address' above.",
+            });
+
+            return;
+        } else if (formDetails.subject == "") {
+            setStatus({
+                success: false,
+                message: "Please fill in your 'Subject' above.",
+            });
+
+            return;
+        } else if (formDetails.message == "") {
+            setStatus({
+                success: false,
+                message: "Please fill in your 'Message' above.",
+            });
+
+            return;
+        }
+
+        // Send a POST request to the 'EmailServer.js' express server
         e.preventDefault();
-        setBtnText("Sending...");
+        setIsSending(true);
         let response = await fetch("http://localhost:5000/contact", {
             method: "POST",
             headers: {
@@ -33,6 +68,7 @@ export const Contact = () => {
             body: JSON.stringify(formDetails),
         });
 
+        setIsSending(false);
         setBtnText("Send");
         let result = await response.json();
         setFormDetails(formInitialDetails);
@@ -40,7 +76,7 @@ export const Contact = () => {
             setStatus({
                 success: true,
                 message:
-                    "Message sent successfully, thank you for the contact! You may expect a response within a few days.",
+                    "Message sent successfully, thank you for the contact! You may expect my response within a few days.",
             });
         } else {
             setStatus({
@@ -50,6 +86,23 @@ export const Contact = () => {
             });
         }
     };
+
+    const tick = () => {
+        if (isSending) {
+            setDotNum((dotNum + 1) % 4);
+            setBtnText("Sending" + ".".repeat(dotNum));
+        }
+    };
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta);
+
+        return () => {
+            clearInterval(ticker);
+        };
+    });
 
     return (
         <section className="contact" id="contact">

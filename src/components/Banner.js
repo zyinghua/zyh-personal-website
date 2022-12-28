@@ -35,8 +35,7 @@ export const Banner = () => {
     // Like in the spaceInvader project, tick() is invoked
     // every "delta" period using setInterval().
     const tick = () => {
-        let i = loopIndex % toRotate.length;
-        let fullText = toRotate[i];
+        let fullText = toRotate[loopIndex];
         let updateText = isDeleting
             ? fullText.substring(0, text.length - 1)
             : fullText.substring(0, text.length + 1);
@@ -48,13 +47,15 @@ export const Banner = () => {
             setDelta((prevDelta) => prevDelta / 2);
         }
 
-        if (!isDeleting && updateText === fullText) {
+        if (updateText === "") {
+            // Always isDeleting === true when here is reached
+            setIsDeleting(false);
+            setLoopIndex((loopIndex + 1) % toRotate.length);
+            setDelta(showPeriod);
+        } else if (updateText === fullText) {
+            // Always isDeleting === false when here is reached
             setIsDeleting(true);
             setDelta(deletePeriod);
-        } else if (isDeleting && updateText === "") {
-            setIsDeleting(false);
-            setLoopIndex(loopIndex + 1);
-            setDelta(showPeriod);
         }
     };
 

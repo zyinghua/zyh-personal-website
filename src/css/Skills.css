@@ -70,6 +70,9 @@
 }
 .skill-box {
     background: url("../assets/img/skill-box-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 64px;
     text-align: center;
     padding: 50px 50px;
