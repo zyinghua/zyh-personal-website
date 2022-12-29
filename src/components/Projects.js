@@ -43,21 +43,21 @@ export const Projects = () => {
                                 className="owl-carousel owl-theme project-slider"
                             >
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} />
                                     <h5>
                                         Applied Algorithms and Data Structures
                                     </h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
+                                    <img src={meter2} />
                                     <h5>Front-end Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
+                                    <img src={meter3} />
                                     <h5>Back-end Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} />
                                     <h5>Artificial Intelligence (Beginner)</h5>
                                 </div>
                             </Carousel>

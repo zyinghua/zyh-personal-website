@@ -26,6 +26,8 @@ export const Contact = () => {
     const [dotNum, setDotNum] = useState(0);
 
     const handleSubmit = async (e) => {
+        e.preventDefault();
+
         // Check invalid empty fields
         if (formDetails.firstName == "") {
             setStatus({
@@ -58,7 +60,6 @@ export const Contact = () => {
         }
 
         // Send a POST request to the 'EmailServer.js' express server
-        e.preventDefault();
         setIsSending(true);
         let response = await fetch("http://localhost:5000/contact", {
             method: "POST",
