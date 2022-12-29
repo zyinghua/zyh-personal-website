@@ -9,22 +9,29 @@ export const Skills = () => {
             {
                 skillName: "Android Development",
                 skillLevel: "Intermediate",
+                description:
+                    "One year total experience. Completed a relevant subject with a grade of 95,\
+                    Implemented the entire front-end Android App for a project with all the requirements satisfactorily achieved.",
             },
             {
                 skillName: "JavaScript",
                 skillLevel: "Basic",
+                description: "",
             },
             {
                 skillName: "HTML",
                 skillLevel: "Basic",
+                description: "",
             },
             {
                 skillName: "CSS",
                 skillLevel: "Basic",
+                description: "",
             },
             {
                 skillName: "React",
                 skillLevel: "Beginner",
+                description: "",
             },
         ],
         comp_sci: [
