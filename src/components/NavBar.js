@@ -37,9 +37,7 @@ export const NavBar = () => {
                         <a className="site-txt-logo">YINGHUA ZHOU</a>
                     </span>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav">
-                    <span className="navbar-toggler-icon" />
-                </Navbar.Toggle>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link
@@ -98,7 +96,7 @@ export const NavBar = () => {
                             Photos
                         </Nav.Link>
                     </Nav>
-                    <span className="navbar-text">
+                    <span>
                         <div className="social-icon">
                             <a href={githubLink} className="github-icon">
                                 <img
@@ -119,13 +117,15 @@ export const NavBar = () => {
                                 />
                             </a>
                         </div>
+                    </span>
+                    <div className="navbar-text">
                         <a href="#contact">
                             <button className="nav-contact-me-btn">
                                 <span>Contact Me</span>
                                 <img src={send} />
                             </button>
                         </a>
-                    </span>
+                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
