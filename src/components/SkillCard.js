@@ -50,7 +50,7 @@ export const SkillCard = (skill) => {
                     horizontal: "left",
                 }}
                 PaperProps={{
-                    style: { width: "50%" },
+                    style: { maxWidth: "50%" },
                 }}
                 onClose={handlePopoverClose}
                 disableRestoreFocus
