@@ -75,6 +75,7 @@
 }
 .skill-group :hover {
     color: #8a1390de;
+    cursor: pointer;
 }
 .skill-data {
     display: inline-flex;

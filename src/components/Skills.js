@@ -36,6 +36,12 @@ export const Skills = () => {
                 skillLevel: "Beginner",
                 description: "Understand some simple concepts.",
             },
+            {
+                skillName: "Usability",
+                skillLevel: "Basic",
+                description:
+                    "Learning experience with some iconic concepts of usability/UX.",
+            },
         ],
         comp_sci: [
             {
@@ -60,7 +66,7 @@ export const Skills = () => {
                 skillLevel: "Basic",
                 description:
                     "Understand the fundamental concepts, ready to develop further, \
-                    achieved the official highest grade in the cohort of a dedicated subject at Monash Uni.",
+                    achieved the official highest grade in my cohort of a dedicated subject at Monash Uni.",
             },
             {
                 skillName: "Artifical Intelligence",

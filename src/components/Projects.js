@@ -1,9 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import projImg1 from "../assets/img/project-img1.png";
 
 export const Projects = () => {
     const responsive = {
@@ -25,6 +24,12 @@ export const Projects = () => {
         },
     };
 
+    const project = {
+        title: "Business Startup",
+        description: "Design & Development",
+        imgUrl: projImg1,
+    };
+
     return (
         <section className="projects" id="projects">
             <div className="project-box">
@@ -32,33 +37,13 @@ export const Projects = () => {
                     <Row>
                         <Col>
                             <h2>Projects</h2>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry.<br></br> Lorem Ipsum
-                                has been the industry's standard dummy text.
-                            </p>
                             <Carousel
                                 responsive={responsive}
                                 infinite={true}
                                 className="owl-carousel owl-theme project-slider"
                             >
                                 <div className="item">
-                                    <img src={meter1} />
-                                    <h5>
-                                        Applied Algorithms and Data Structures
-                                    </h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter2} />
-                                    <h5>Front-end Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter3} />
-                                    <h5>Back-end Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter1} />
-                                    <h5>Artificial Intelligence (Beginner)</h5>
+                                    <ProjectCard key="1" {...project} />
                                 </div>
                             </Carousel>
                         </Col>

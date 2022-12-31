@@ -24,8 +24,8 @@ export const SkillCard = (skill) => {
                     className="skill-data"
                     aria-owns={open ? "mouse-over-popover" : undefined}
                     aria-haspopup="true"
-                    onMouseEnter={handlePopoverOpen}
-                    onMouseLeave={handlePopoverClose}
+                    onMouseDown={handlePopoverOpen}
+                    onMouseOut={handlePopoverClose}
                 >
                     <BiBadgeCheck className="skill-badge-check-icon" />
                     <div>
@@ -54,6 +54,7 @@ export const SkillCard = (skill) => {
                 }}
                 onClose={handlePopoverClose}
                 disableRestoreFocus
+                disableScrollLock
             >
                 <Typography sx={{ p: 1 }}>{skill.description}</Typography>
             </Popover>
