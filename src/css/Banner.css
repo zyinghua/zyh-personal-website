@@ -70,6 +70,7 @@
     letter-spacing: 0.8px;
     display: flex;
     align-items: center;
+    color: rgb(34, 13, 51);
 }
 .banner button svg {
     margin-left: 10px;
