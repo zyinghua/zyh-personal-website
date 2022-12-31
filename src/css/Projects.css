@@ -66,7 +66,7 @@
 .proj-imgbox:hover::before {
     height: 100%;
 }
-.proj-txtx {
+.proj-txt {
     position: absolute;
     text-align: center;
     top: 65%;
@@ -76,19 +76,29 @@
     opacity: 0;
     width: 100%;
 }
-.proj-imgbox:hover .proj-txtx {
+.proj-imgbox:hover .proj-txt {
     top: 50%;
     opacity: 1;
 }
-.proj-txtx h4 {
+.proj-txt h4 {
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1.1em;
+    margin-bottom: 25px;
 }
-.proj-txtx span {
+.proj-txt span {
     font-style: italic;
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.8px;
+}
+.proj-view-more-txt {
+    font-size: large;
+    margin-top: 55px;
+    cursor: pointer;
+}
+.proj-view-more-txt svg {
+    margin-top: -5px;
+    margin-left: 8px;
 }
