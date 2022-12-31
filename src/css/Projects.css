@@ -100,3 +100,15 @@
     margin-top: -5px;
     margin-left: 8px;
 }
+
+@media only screen and (max-width: 1250px) {
+    .proj-txt h4 {
+        display: none;
+    }
+    .proj-txt span {
+        display: none;
+    }
+    .proj-view-more-txt {
+        margin-top: 0;
+    }
+}
