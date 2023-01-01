@@ -1,20 +1,6 @@
 .skills {
     position: relative;
-    background-image: linear-gradient(
-        to bottom,
-        #fdfff9,
-        #f9fef8,
-        #f6fdf8,
-        #f2fbf8,
-        #effaf8,
-        #effaf8,
-        #effaf8,
-        #effaf8,
-        #f2fbf8,
-        #f6fdf8,
-        #f9fef8,
-        #fdfff9
-    );
+
     padding: 0 0 100px 0;
 }
 .skills h2 {

@@ -1,10 +1,69 @@
 .education {
     position: relative;
     padding: 0 0 100px 0;
+    background-image: linear-gradient(
+        to bottom,
+        #fdfff9,
+        #f9fef8,
+        #f6fdf8,
+        #f2fbf8,
+        #effaf8,
+        #effaf8,
+        #effaf8,
+        #effaf8,
+        #f2fbf8,
+        #f6fdf8,
+        #f9fef8,
+        #fdfff9
+    );
 }
 .education h2 {
     font-size: 45px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 72px;
+}
+
+.education-content {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+.education-icon {
+    font-size: 1.8rem;
+}
+.education-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 2rem;
+}
+.education-degree {
+    font-size: 24px;
+    font-weight: bold;
+}
+.education-institute {
+    display: inline-block;
+    font-size: 18px;
+}
+.education-calendar {
+    margin-top: 18px;
+    font-size: large;
+}
+.education-calendar svg {
+    margin-top: -2px;
+    margin-right: 6px;
+}
+.education-rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #121212;
+    border-radius: 50%;
+}
+.education-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #121212;
+    transform: translate(6px, -7px);
 }
