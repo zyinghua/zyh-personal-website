@@ -83,8 +83,7 @@
     transition: 0.3s;
 }
 .education-modal-content {
-    max-width: 780px;
-    min-width: 360px;
+    max-width: 880px;
     position: relative;
     background-color: #fff;
     padding: 56px 100px 48px 100px;
