@@ -80,7 +80,6 @@
     justify-content: center;
     align-items: center;
     padding: 0 16px;
-    transition: 0.3s;
 }
 .education-modal-content {
     max-width: 880px;
@@ -115,4 +114,21 @@
 }
 .education-modal-active {
     display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+    .education-rounder {
+        display: none;
+    }
+    .education-line {
+        display: none;
+    }
+    .education-data {
+        display: grid;
+        grid-template-columns: none;
+        column-gap: 0px;
+        margin-bottom: 72px;
+        width: 90vw;
+        text-align: center;
+    }
 }
