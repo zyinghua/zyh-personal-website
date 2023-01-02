@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact.svg";
 
 export const Contact = () => {
-    async function fetchWithTimeout(target, options = {}) {
-        //Default is 7000 if timeout not defined in options
+    const fetchWithTimeout = async (target, options = {}) => {
+        //Default is 5000 if timeout not defined in options
         const { timeout = 5000 } = options;
 
         // Used to abort the fetch
@@ -12,7 +12,15 @@ export const Contact = () => {
         // If {timeout} passed, do first parameter action
         const id = setTimeout(() => {
             controller.abort();
-            console.log("ERROR: SERVER DID NOT RESPOND CORRECTLY");
+
+            setIsSending(false);
+            setBtnText("Send");
+            setFormDetails(formInitialDetails);
+            setStatus({
+                success: false,
+                message:
+                    "Server did not respond, please try again later, apologies for the inconvenience.",
+            });
         }, timeout);
 
         //Normal fetch, but signal binded with controller
@@ -25,7 +33,7 @@ export const Contact = () => {
         clearTimeout(id);
 
         return response;
-    }
+    };
 
     const formInitialDetails = {
         firstName: "",
@@ -107,7 +115,7 @@ export const Contact = () => {
             setStatus({
                 success: false,
                 message:
-                    "Looks like something went wrong, please try again later.",
+                    "Looks like something went wrong, please try again later, apologies for the inconvenience.",
             });
         }
     };
