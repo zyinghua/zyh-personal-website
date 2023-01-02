@@ -82,7 +82,7 @@
 }
 .banner-right-img {
     margin-left: 24px;
-    animation: updown 3s linear infinite;
+    /* animation: updown 3s linear infinite; */
 }
 @keyframes updown {
     0% {

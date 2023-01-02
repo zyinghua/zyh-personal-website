@@ -8,6 +8,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Blogs } from "./components/Blogs";
 import { Photos } from "./components/Photos";
+import { PageNotFound } from "./components/PageNotFound";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
@@ -30,8 +31,10 @@ function App() {
                         </div>
                     }
                 />
+
                 <Route path="/blogs" element={<Blogs />} />
                 <Route path="/photos" element={<Photos />} />
+                <Route path="*" element={<PageNotFound />} />
             </Routes>
         </BrowserRouter>
     );
