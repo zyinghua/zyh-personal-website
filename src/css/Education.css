@@ -67,3 +67,44 @@
     background-color: #121212;
     transform: translate(6px, -7px);
 }
+.education-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    transition: 0.3s;
+}
+.education-modal-content {
+    max-width: 780px;
+    min-width: 360px;
+    position: relative;
+    background-color: #fff;
+    padding: 56px 100px 48px 100px;
+    border-radius: 24px;
+}
+.education-modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.education-modal-degree,
+.education-modal-institute {
+    text-align: center;
+}
+.education-modal-wam,
+.education-modal-desc {
+    display: flex;
+    justify-content: start;
+}
+.education-modal-active {
+    display: flex;
+}
