@@ -24,59 +24,57 @@ export const Education = () => {
                 <Row className="align-item-center">
                     <Col>
                         <h2>Education</h2>
-                        <div className="education-container">
-                            <div className="education-content">
-                                {education_data.map((instance, index) => {
-                                    if (index % 2 == 0) {
-                                        return (
-                                            <div className="education-data">
-                                                <div>
-                                                    <h3 className="education-degree">
-                                                        {instance.degree}
-                                                    </h3>
-                                                    <span className="education-institute">
-                                                        {instance.institute}
-                                                    </span>
-                                                    <div className="education-calendar">
-                                                        <BiCalendar />
-                                                        {instance.start} -{" "}
-                                                        {instance.end}
-                                                    </div>
-                                                </div>
-
-                                                <div>
-                                                    <span className="education-rounder" />
-                                                    <span className="education-line" />
+                        <div className="education-content">
+                            {education_data.map((instance, index) => {
+                                if (index % 2 == 0) {
+                                    return (
+                                        <div className="education-data">
+                                            <div>
+                                                <h3 className="education-degree">
+                                                    {instance.degree}
+                                                </h3>
+                                                <span className="education-institute">
+                                                    {instance.institute}
+                                                </span>
+                                                <div className="education-calendar">
+                                                    <BiCalendar />
+                                                    {instance.start} -{" "}
+                                                    {instance.end}
                                                 </div>
                                             </div>
-                                        );
-                                    } else {
-                                        return (
-                                            <div className="education-data">
-                                                <div />
-                                                <div>
-                                                    <span className="education-rounder" />
-                                                    <span className="education-line" />
-                                                </div>
 
-                                                <div>
-                                                    <h3 className="education-degree">
-                                                        {instance.degree}
-                                                    </h3>
-                                                    <span className="education-institute">
-                                                        {instance.institute}
-                                                    </span>
-                                                    <div className="education-calendar">
-                                                        <BiCalendar />
-                                                        {instance.start} -{" "}
-                                                        {instance.end}
-                                                    </div>
+                                            <div>
+                                                <span className="education-rounder" />
+                                                <span className="education-line" />
+                                            </div>
+                                        </div>
+                                    );
+                                } else {
+                                    return (
+                                        <div className="education-data">
+                                            <div />
+                                            <div>
+                                                <span className="education-rounder" />
+                                                <span className="education-line" />
+                                            </div>
+
+                                            <div>
+                                                <h3 className="education-degree">
+                                                    {instance.degree}
+                                                </h3>
+                                                <span className="education-institute">
+                                                    {instance.institute}
+                                                </span>
+                                                <div className="education-calendar">
+                                                    <BiCalendar />
+                                                    {instance.start} -{" "}
+                                                    {instance.end}
                                                 </div>
                                             </div>
-                                        );
-                                    }
-                                })}
-                            </div>
+                                        </div>
+                                    );
+                                }
+                            })}
                         </div>
                     </Col>
                 </Row>
