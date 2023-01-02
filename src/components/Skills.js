@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { SkillCard } from "./SkillCard";
-import "animate.css";
 import TrackVisibility from "react-on-screen";
+import "animate.css";
 
 export const Skills = () => {
     const skills = {
