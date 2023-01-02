@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { BiCalendar, BiX } from "react-icons/bi";
 
@@ -82,6 +82,7 @@ export const Education = () => {
                                                     </h3>
                                                     <a
                                                         target="_blank"
+                                                        rel="noreferrer"
                                                         href={instance.uniUrl}
                                                         style={{
                                                             "text-decoration":
@@ -151,6 +152,7 @@ export const Education = () => {
                                                     </h3>
                                                     <a
                                                         target="_blank"
+                                                        rel="noreferrer"
                                                         href={instance.uniUrl}
                                                         style={{
                                                             "text-decoration":

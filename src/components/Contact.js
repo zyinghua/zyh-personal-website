@@ -3,6 +3,29 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact.svg";
 
 export const Contact = () => {
+    async function fetchWithTimeout(target, options = {}) {
+        console.log("first line reached");
+        //Default is 7000 if timeout not defined in options
+        const { timeout = 5000 } = options;
+
+        // Used to abort the fetch
+        const controller = new AbortController();
+        // If {timeout} passed, do first parameter action
+        const id = setTimeout(() => controller.abort(), timeout);
+        console.log("entering fetch...");
+        //Normal fetch, but signal binded with controller
+        const response = await fetch(target, {
+            ...options,
+            signal: controller.signal,
+        });
+
+        console.log("after fetch...");
+        //If response received, this line will be reached.
+        clearTimeout(id);
+
+        return response;
+    }
+
     const formInitialDetails = {
         firstName: "",
         lastName: "",
@@ -29,28 +52,28 @@ export const Contact = () => {
         e.preventDefault();
 
         // Check invalid empty fields
-        if (formDetails.firstName == "") {
+        if (formDetails.firstName === "") {
             setStatus({
                 success: false,
                 message: "Please fill in your 'First Name' above.",
             });
 
             return;
-        } else if (formDetails.email == "") {
+        } else if (formDetails.email === "") {
             setStatus({
                 success: false,
                 message: "Please fill in your 'Email Address' above.",
             });
 
             return;
-        } else if (formDetails.subject == "") {
+        } else if (formDetails.subject === "") {
             setStatus({
                 success: false,
                 message: "Please fill in your 'Subject' above.",
             });
 
             return;
-        } else if (formDetails.message == "") {
+        } else if (formDetails.message === "") {
             setStatus({
                 success: false,
                 message: "Please fill in your 'Message' above.",
@@ -61,7 +84,7 @@ export const Contact = () => {
 
         // Send a POST request to the 'EmailServer.js' express server
         setIsSending(true);
-        let response = await fetch("http://localhost:5000/contact", {
+        let response = await fetchWithTimeout("http://localhost:5000/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json;charset=utf-8",
