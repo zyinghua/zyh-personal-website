@@ -9,8 +9,10 @@ export const Education = () => {
             institute: "The University of Melbourne",
             start: "2022",
             end: "Present",
-            wam: "-",
-            desc: "1111",
+            wam: "81",
+            desc: "Finished first semester. Major orientation: AI Planning and \
+            Machine Learning fields (e.g., NLP, CV). Planned completion date: end of 2023.",
+            uniUrl: "https://www.unimelb.edu.au/",
         },
         {
             degree: "Bachelor of Computer Science",
@@ -18,7 +20,9 @@ export const Education = () => {
             start: "2020",
             end: "2022",
             wam: "84+",
-            desc: "Good good study",
+            desc: "Specialisation: Advanced Computer Science (Algorithms and system oriented). \
+            One of the top students in my cohorts of many subjects.",
+            uniUrl: "https://www.monash.edu/",
         },
     ];
 
@@ -36,6 +40,7 @@ export const Education = () => {
                                     return (
                                         <div className="education-data">
                                             <div
+                                                className="education-brief"
                                                 onClick={() =>
                                                     setActiveModal(index)
                                                 }
@@ -75,10 +80,21 @@ export const Education = () => {
                                                     <h3 className="education-modal-degree">
                                                         {instance.degree}
                                                     </h3>
-                                                    <p className="education-modal-institute">
-                                                        {instance.institute}
+                                                    <a
+                                                        target="_blank"
+                                                        href={instance.uniUrl}
+                                                        style={{
+                                                            "text-decoration":
+                                                                "none",
+                                                        }}
+                                                    >
+                                                        <p className="education-modal-institute">
+                                                            {instance.institute}
+                                                        </p>
+                                                    </a>
+                                                    <p className="education-modal-wam">
+                                                        WAM: {instance.wam}
                                                     </p>
-                                                    <p>WAM: {instance.wam}</p>
                                                     <p className="education-modal-desc">
                                                         {instance.desc}
                                                     </p>
@@ -96,6 +112,7 @@ export const Education = () => {
                                             </div>
 
                                             <div
+                                                className="education-brief"
                                                 onClick={() =>
                                                     setActiveModal(index)
                                                 }
@@ -132,10 +149,21 @@ export const Education = () => {
                                                     <h3 className="education-modal-degree">
                                                         {instance.degree}
                                                     </h3>
-                                                    <p className="education-modal-institute">
-                                                        {instance.institute}
+                                                    <a
+                                                        target="_blank"
+                                                        href={instance.uniUrl}
+                                                        style={{
+                                                            "text-decoration":
+                                                                "none",
+                                                        }}
+                                                    >
+                                                        <p className="education-modal-institute">
+                                                            {instance.institute}
+                                                        </p>
+                                                    </a>
+                                                    <p className="education-modal-wam">
+                                                        WAM: {instance.wam}
                                                     </p>
-                                                    <p>WAM: {instance.wam}</p>
                                                     <p className="education-modal-desc">
                                                         {instance.desc}
                                                     </p>

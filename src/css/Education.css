@@ -29,13 +29,14 @@
     grid-template-columns: 0.5fr;
     justify-content: center;
 }
-.education-icon {
-    font-size: 1.8rem;
-}
 .education-data {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
-    column-gap: 2rem;
+    column-gap: 32px;
+}
+.education-brief:hover {
+    color: #8a1390de;
+    cursor: pointer;
 }
 .education-degree {
     font-size: 24px;
@@ -100,10 +101,18 @@
 .education-modal-institute {
     text-align: center;
 }
+.education-modal-institute {
+    margin-top: 12px;
+    margin-bottom: 48px;
+    font-size: 24px;
+    font-style: italic;
+}
+
 .education-modal-wam,
 .education-modal-desc {
     display: flex;
     justify-content: start;
+    font-size: 20px;
 }
 .education-modal-active {
     display: flex;
