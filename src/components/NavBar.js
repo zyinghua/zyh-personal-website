@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import github from "../assets/img/github.svg";
 import leetcode from "../assets/img/leetcode.svg";
 import linkedIn from "../assets/img/linkedin.svg";
@@ -73,27 +74,16 @@ export const NavBar = () => {
                         >
                             Projects
                         </Nav.Link>
-                        <Nav.Link
-                            href="#blogs"
-                            className={
-                                activeLink === "blogs"
-                                    ? "active navbar-link"
-                                    : "navbar-link"
-                            }
-                            onClick={() => setActiveLink("blogs")}
-                        >
-                            Blogs
+                        <Nav.Link className="navbar-link">
+                            <Link className="dom-link" to="/blogs">
+                                Blogs
+                            </Link>
                         </Nav.Link>
-                        <Nav.Link
-                            href="#photos"
-                            className={
-                                activeLink === "photos"
-                                    ? "active navbar-link"
-                                    : "navbar-link"
-                            }
-                            onClick={() => setActiveLink("photos")}
-                        >
-                            Photos
+
+                        <Nav.Link className="navbar-link">
+                            <Link className="dom-link" to="/photos">
+                                Photos
+                            </Link>
                         </Nav.Link>
                     </Nav>
                     <span>

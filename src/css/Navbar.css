@@ -15,7 +15,7 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 500;
-    color: #121212 !important;
+    color: var(--general-font-color) !important;
     letter-spacing: 0.8px;
     padding: 0 18px;
     font-size: 18px;

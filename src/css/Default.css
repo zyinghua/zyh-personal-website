@@ -15,6 +15,10 @@
     font-weight: 400;
 }
 
+:root {
+    --general-font-color: #121212;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -99,4 +103,8 @@ p.danger {
     font-weight: bold;
     font-size: 28px;
     font-family: "Courier New";
+}
+.dom-link {
+    text-decoration: none;
+    color: var(--general-font-color) !important;
 }

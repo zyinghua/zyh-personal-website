@@ -6,19 +6,34 @@ import { Education } from "./components/Education";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Blogs } from "./components/Blogs";
+import { Photos } from "./components/Photos";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
     return (
-        <div className="App">
-            <NavBar />
-            <Banner />
-            <Skills />
-            <Education />
-            <Projects />
-            <Contact />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route
+                    exact
+                    path="/"
+                    element={
+                        <div className="App">
+                            <NavBar />
+                            <Banner />
+                            <Skills />
+                            <Education />
+                            <Projects />
+                            <Contact />
+                            <Footer />
+                        </div>
+                    }
+                />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/photos" element={<Photos />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
