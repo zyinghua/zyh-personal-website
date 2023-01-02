@@ -3,9 +3,13 @@ import pnf from "../assets/img/404-page-not-found.gif";
 
 export const PageNotFound = () => {
     return (
-        <div>
+        <div className="page-not-found" id="page-not-found">
             <h2>404 Page Not Found</h2>
-            <img src={pnf} alt="404-Page-Not-Found.gif" />
+            <img
+                src={pnf}
+                alt="404-Page-Not-Found.gif"
+                className="page-not-found-img"
+            />
             <p>
                 The page you are trying to access is not found, please make sure
                 your URL is correct.
