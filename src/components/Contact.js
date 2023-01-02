@@ -4,22 +4,23 @@ import contactImg from "../assets/img/contact.svg";
 
 export const Contact = () => {
     async function fetchWithTimeout(target, options = {}) {
-        console.log("first line reached");
         //Default is 7000 if timeout not defined in options
         const { timeout = 5000 } = options;
 
         // Used to abort the fetch
         const controller = new AbortController();
         // If {timeout} passed, do first parameter action
-        const id = setTimeout(() => controller.abort(), timeout);
-        console.log("entering fetch...");
+        const id = setTimeout(() => {
+            controller.abort();
+            console.log("ERROR: SERVER DID NOT RESPOND CORRECTLY");
+        }, timeout);
+
         //Normal fetch, but signal binded with controller
         const response = await fetch(target, {
             ...options,
             signal: controller.signal,
         });
 
-        console.log("after fetch...");
         //If response received, this line will be reached.
         clearTimeout(id);
 
