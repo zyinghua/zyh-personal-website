@@ -91,8 +91,9 @@ export const Contact = () => {
             return;
         }
 
-        // Send a POST request to the 'EmailServer.js' express server
+        // Send a POST request to the email server
         setIsSending(true);
+
         let response = await fetchWithTimeout("http://localhost:5000/contact", {
             method: "POST",
             headers: {
