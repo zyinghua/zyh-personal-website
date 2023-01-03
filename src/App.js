@@ -32,8 +32,8 @@ function App() {
                     }
                 />
 
-                <Route exact path="/posts" element={<Posts />} />
-                <Route exact path="/photos" element={<Photos />} />
+                <Route path="/posts" element={<Posts />} />
+                <Route path="/photos" element={<Photos />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </BrowserRouter>
