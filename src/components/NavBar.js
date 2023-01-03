@@ -76,14 +76,14 @@ export const NavBar = () => {
                         </Nav.Link>
                         <Nav.Link
                             className={
-                                activeLink === "blogs"
+                                activeLink === "posts"
                                     ? "active navbar-link"
                                     : "navbar-link"
                             }
-                            onClick={() => setActiveLink("blogs")}
+                            onClick={() => setActiveLink("posts")}
                         >
-                            <Link className="dom-link" to="/blogs">
-                                Blogs
+                            <Link className="dom-link" to="/posts">
+                                Posts
                             </Link>
                         </Nav.Link>
 
