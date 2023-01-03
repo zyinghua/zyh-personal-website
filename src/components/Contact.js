@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact.svg";
+import contactImg from "../assets/img/contact.gif";
 
 export const Contact = () => {
     const fetchWithTimeout = async (target, options = {}) => {
