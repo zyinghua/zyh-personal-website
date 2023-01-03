@@ -42,7 +42,7 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link
-                            href="/#home"
+                            href="#home"
                             className={
                                 activeLink === "home"
                                     ? "active navbar-link"
@@ -53,7 +53,7 @@ export const NavBar = () => {
                             Home
                         </Nav.Link>
                         <Nav.Link
-                            href="/#skills"
+                            href="#skills"
                             className={
                                 activeLink === "skills"
                                     ? "active navbar-link"
@@ -64,7 +64,7 @@ export const NavBar = () => {
                             Skills
                         </Nav.Link>
                         <Nav.Link
-                            href="/#projects"
+                            href="#projects"
                             className={
                                 activeLink === "projects"
                                     ? "active navbar-link"
@@ -74,13 +74,27 @@ export const NavBar = () => {
                         >
                             Projects
                         </Nav.Link>
-                        <Nav.Link className="navbar-link">
+                        <Nav.Link
+                            className={
+                                activeLink === "blogs"
+                                    ? "active navbar-link"
+                                    : "navbar-link"
+                            }
+                            onClick={() => setActiveLink("blogs")}
+                        >
                             <Link className="dom-link" to="/blogs">
                                 Blogs
                             </Link>
                         </Nav.Link>
 
-                        <Nav.Link className="navbar-link">
+                        <Nav.Link
+                            className={
+                                activeLink === "photos"
+                                    ? "active navbar-link"
+                                    : "navbar-link"
+                            }
+                            onClick={() => setActiveLink("photos")}
+                        >
                             <Link className="dom-link" to="/photos">
                                 Photos
                             </Link>

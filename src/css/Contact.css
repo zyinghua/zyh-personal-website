@@ -19,7 +19,7 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #3806068a;
     border-radius: 20px;
-    color: #121212;
+    color: var(--general-font-color);
     margin: 0 0 8px 0;
     padding: 18px 26px;
     font-weight: 500;
@@ -30,7 +30,7 @@
 .contact form input:focus,
 .contact form textarea:focus {
     background: rgba(255, 255, 255, 1);
-    color: #121212;
+    color: var(--general-font-color);
 }
 .contact form input::placeholder,
 .contact form textarea::placeholder {
@@ -40,7 +40,7 @@
 }
 .contact form input:focus::placeholder,
 .contact form textarea:focus::placeholder {
-    color: #121212;
+    color: var(--general-font-color);
     opacity: 0.8;
 }
 .contact form button {

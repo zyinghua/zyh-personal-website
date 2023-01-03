@@ -22,7 +22,7 @@
     background-color: transparent;
     border-radius: 0;
     padding: 17px 0;
-    color: #121212;
+    color: var(--general-font-color);
     width: 100%;
     font-size: 17px;
     letter-spacing: 0.8px;

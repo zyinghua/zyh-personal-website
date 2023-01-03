@@ -15,13 +15,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
     return (
         <BrowserRouter>
-            <NavBar />
             <Routes>
                 <Route
                     exact
                     path="/"
                     element={
                         <div className="App">
+                            <NavBar />
                             <Banner />
                             <Skills />
                             <Education />
@@ -32,8 +32,8 @@ function App() {
                     }
                 />
 
-                <Route path="/blogs" element={<Blogs />} />
-                <Route path="/photos" element={<Photos />} />
+                <Route exact path="/blogs" element={<Blogs />} />
+                <Route exact path="/photos" element={<Photos />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </BrowserRouter>
