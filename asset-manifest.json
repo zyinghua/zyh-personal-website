@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f14a8c3.css",
-    "main.js": "/static/js/main.80417c13.js",
+    "main.css": "/static/css/main.f1f4a19f.css",
+    "main.js": "/static/js/main.0501b678.js",
     "static/js/787.a5095389.chunk.js": "/static/js/787.a5095389.chunk.js",
+    "static/media/the-twelve-apostles.jpeg": "/static/media/the-twelve-apostles.2069d22f3b9dbc2abe12.jpeg",
     "static/media/project-box-bg.jpg": "/static/media/project-box-bg.d8b0b645d4aa3c5be00b.jpg",
+    "static/media/sydney-harbour-bridge-pigeon.jpg": "/static/media/sydney-harbour-bridge-pigeon.6b96702d40cc1bf430a3.jpg",
+    "static/media/melb-tram.jpg": "/static/media/melb-tram.65610d1396c608205757.jpg",
+    "static/media/opera-house.jpg": "/static/media/opera-house.0140bd8c9f00f5bb2470.jpg",
     "static/media/contact.gif": "/static/media/contact.77a703035273dd707982.gif",
     "static/media/programmer.gif": "/static/media/programmer.7a93b6312e82dd6cd56d.gif",
     "static/media/Scannera_Project_Doc.pdf": "/static/media/Scannera_Project_Doc.8292a1dd0d32748079e7.pdf",
     "static/media/skill-box-bg.jpg": "/static/media/skill-box-bg.733f2f20adc1417184a7.jpg",
     "static/media/contact-bg.jpg": "/static/media/contact-bg.3bbd832c4eb669989a09.jpg",
     "static/media/404-page-not-found.gif": "/static/media/404-page-not-found.f02b01c759b5ee88c590.gif",
+    "static/media/bridge-pigeons.jpeg": "/static/media/bridge-pigeons.f0a3417cb742e1c35846.jpeg",
+    "static/media/sunset.jpeg": "/static/media/sunset.b8380583e2811916c9bf.jpeg",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -23,12 +29,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.d09d64fe30b941c2d5dba4695179f496.svg",
     "static/media/leetcode.svg": "/static/media/leetcode.fa87fd9fdee40db78ae26dc18fe60a30.svg",
     "index.html": "/index.html",
-    "main.4f14a8c3.css.map": "/static/css/main.4f14a8c3.css.map",
-    "main.80417c13.js.map": "/static/js/main.80417c13.js.map",
+    "main.f1f4a19f.css.map": "/static/css/main.f1f4a19f.css.map",
+    "main.0501b678.js.map": "/static/js/main.0501b678.js.map",
     "787.a5095389.chunk.js.map": "/static/js/787.a5095389.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f14a8c3.css",
-    "static/js/main.80417c13.js"
+    "static/css/main.f1f4a19f.css",
+    "static/js/main.0501b678.js"
   ]
 }
