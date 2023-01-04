@@ -19,7 +19,8 @@ export const Contact = () => {
             setStatus({
                 success: false,
                 message:
-                    "Server did not respond, please try again later, apologies for the inconvenience.",
+                    "Server did not respond, please try again later, apologies for the inconvenience.\
+                    Alternatively, you can reach me via {yinghuazhouu@gmail.com}.",
             });
         }, timeout);
 
@@ -116,7 +117,8 @@ export const Contact = () => {
             setStatus({
                 success: false,
                 message:
-                    "Looks like something went wrong, please try again later, apologies for the inconvenience.",
+                    "Looks like something went wrong, please try again later, apologies for the inconvenience.\
+                    Alternatively, you can reach me via {yinghuazhouu@gmail.com}.",
             });
         }
     };
