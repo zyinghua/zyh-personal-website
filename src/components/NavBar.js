@@ -33,16 +33,18 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
                     <span>
-                        <a className="site-txt-logo">YINGHUA ZHOU</a>
+                        <a href="/#home" className="site-txt-logo">
+                            YINGHUA ZHOU
+                        </a>
                     </span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link
-                            href="#home"
+                            href="/#home"
                             className={
                                 activeLink === "home"
                                     ? "active navbar-link"
@@ -53,7 +55,7 @@ export const NavBar = () => {
                             Home
                         </Nav.Link>
                         <Nav.Link
-                            href="#skills"
+                            href="/#skills"
                             className={
                                 activeLink === "skills"
                                     ? "active navbar-link"
@@ -64,7 +66,7 @@ export const NavBar = () => {
                             Skills
                         </Nav.Link>
                         <Nav.Link
-                            href="#projects"
+                            href="/#projects"
                             className={
                                 activeLink === "projects"
                                     ? "active navbar-link"

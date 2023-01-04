@@ -13,9 +13,7 @@ export const Footer = () => {
             <Container>
                 <Row className="align-item-center">
                     <Col sm={6}>
-                        <span>
-                            <a className="site-txt-logo">YINGHUA ZHOU</a>
-                        </span>
+                        <span className="site-txt-logo">YINGHUA ZHOU</span>
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <div className="social-icon">
