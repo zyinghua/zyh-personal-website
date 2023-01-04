@@ -1,4 +1,31 @@
 .posts {
-    text-align: center;
     margin: 150px 0 100px 0;
+}
+.posts h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.post-card {
+    background-image: url("../assets//img/post-card-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 24px;
+}
+.post-card:hover {
+    transform: translateY(-1px);
+}
+.post-title {
+    margin: 15px 20px 0 20px;
+}
+.post-date {
+    margin: 15px 20px 0 20px;
+}
+.post-card p {
+    font-size: 24px;
+    font-family: "Gill Sans", "Gill Sans MT";
+    margin: 20px 20px 0 20px;
 }

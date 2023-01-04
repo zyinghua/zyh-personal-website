@@ -125,7 +125,7 @@ export const NavBar = () => {
                         </div>
                     </span>
                     <div className="navbar-text">
-                        <a href="#contact">
+                        <a href="/#contact">
                             <button className="nav-contact-me-btn">
                                 <span>Contact Me</span>
                                 <img src={send} />
