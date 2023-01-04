@@ -1,4 +1,5 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
@@ -9,8 +10,8 @@ import { Footer } from "./components/Footer";
 import { Posts } from "./components/Posts";
 import { Photos } from "./components/Photos";
 import { PageNotFound } from "./components/PageNotFound";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Post } from "./components/Post";
 
 function App() {
     return (
@@ -52,6 +53,7 @@ function App() {
                         </div>
                     }
                 />
+                <Route path="/posts/post" element={<Post />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </BrowserRouter>

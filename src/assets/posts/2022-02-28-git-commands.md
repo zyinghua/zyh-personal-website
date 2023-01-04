@@ -1,6 +1,5 @@
 ---
-title:  "Git Commands"
-layout: post
+Title:  "Git Commands"
 ---
 
 ### Login & Pull

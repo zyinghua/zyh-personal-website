@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const PostCard = () => {
     return (
-        <Link className="dom-link" to="">
+        <Link className="dom-link" to="/posts/post">
             <Container className="post-card">
                 <Row>
                     <Col sm={6} className=" text-sm-start">
