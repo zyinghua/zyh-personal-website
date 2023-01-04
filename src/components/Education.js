@@ -1,31 +1,9 @@
 import { React, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { BiCalendar, BiX } from "react-icons/bi";
+import { education_data } from "../assets/data";
 
 export const Education = () => {
-    const education_data = [
-        {
-            degree: "Master of Information Technology (With specialisation in AI)",
-            institute: "The University of Melbourne",
-            start: "2022",
-            end: "Present",
-            wam: "81",
-            desc: "Finished first semester. Major orientation: AI Planning and \
-            Machine Learning fields (e.g., NLP, CV). Planned completion date: end of 2023.",
-            uniUrl: "https://www.unimelb.edu.au/",
-        },
-        {
-            degree: "Bachelor of Computer Science",
-            institute: "Monash University",
-            start: "2020",
-            end: "2022",
-            wam: "84+",
-            desc: "Specialisation: Advanced Computer Science (Algorithms and system oriented). \
-            One of the top students in my cohorts of many subjects.",
-            uniUrl: "https://www.monash.edu/",
-        },
-    ];
-
     const [activeModal, setActiveModal] = useState(null);
 
     return (

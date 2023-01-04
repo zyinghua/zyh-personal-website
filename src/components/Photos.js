@@ -1,14 +1,7 @@
 import { React, useState, useEffect } from "react";
-import { BiChevronLeft } from "react-icons/bi";
-import photo1 from "../assets/img/photos/bridge-pigeons.jpeg";
-import photo2 from "../assets/img/photos/melb-tram.jpg";
-import photo3 from "../assets/img/photos/opera-house.jpg";
-import photo4 from "../assets/img/photos/sunset.jpeg";
-import photo5 from "../assets/img/photos/sydney-harbour-bridge-pigeon.jpg";
-import photo6 from "../assets/img/photos/the-twelve-apostles.jpeg";
+import { photos } from "../assets/data";
 
 export const Photos = () => {
-    const photos = [photo1, photo2, photo3, photo4, photo5, photo6];
     const [displayIndex, setDisplayIndex] = useState(0);
 
     useEffect(() => {

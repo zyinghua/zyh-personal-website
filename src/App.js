@@ -15,27 +15,45 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
     return (
         <BrowserRouter basename="/">
-            <NavBar />
             <Routes>
                 <Route
                     exact
                     path="/"
                     element={
                         <div className="App">
+                            <NavBar />
                             <Banner />
                             <Skills />
                             <Education />
                             <Projects />
                             <Contact />
+                            <Footer />
                         </div>
                     }
                 />
 
-                <Route path="/posts" element={<Posts />} />
-                <Route path="/photos" element={<Photos />} />
+                <Route
+                    path="/posts"
+                    element={
+                        <div>
+                            <NavBar />
+                            <Posts />
+                            <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path="/photos"
+                    element={
+                        <div>
+                            <NavBar />
+                            <Photos />
+                            <Footer />
+                        </div>
+                    }
+                />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
-            <Footer />
         </BrowserRouter>
     );
 }
