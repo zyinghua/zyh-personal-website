@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import { BiChevronLeft } from "react-icons/bi";
 import photo1 from "../assets/img/photos/bridge-pigeons.jpeg";
 import photo2 from "../assets/img/photos/melb-tram.jpg";
 import photo3 from "../assets/img/photos/opera-house.jpg";
