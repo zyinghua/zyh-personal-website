@@ -15,19 +15,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
     return (
         <BrowserRouter basename="/">
+            <NavBar />
             <Routes>
                 <Route
                     exact
                     path="/"
                     element={
                         <div className="App">
-                            <NavBar />
                             <Banner />
                             <Skills />
                             <Education />
                             <Projects />
                             <Contact />
-                            <Footer />
                         </div>
                     }
                 />
@@ -36,6 +35,7 @@ function App() {
                 <Route path="/photos" element={<Photos />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }

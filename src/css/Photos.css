@@ -1,0 +1,40 @@
+.photos {
+    margin: 150px 0 100px 0;
+    text-align: center;
+}
+.photos h4 {
+    margin-bottom: 48px;
+    font-family: monospace;
+}
+
+.slide-show {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+.slide-show-slider {
+    /* Never go to a new line */
+    white-space: nowrap;
+    transition: ease 1000ms;
+}
+.slide {
+    display: inline-block;
+    max-height: 800px;
+    max-width: 100%;
+    border-radius: 40px;
+}
+.slide-show-dots {
+    text-align: center;
+}
+.slide-show-dot {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 7px 0px;
+    opacity: 0.3;
+}
+.slide-show-dot.active {
+    opacity: 1;
+}

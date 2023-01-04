@@ -33,7 +33,7 @@ export const Skills = () => {
             },
             {
                 skillName: "React",
-                skillLevel: "Beginner",
+                skillLevel: "Basic",
                 description: "Understand some simple concepts.",
             },
             {
