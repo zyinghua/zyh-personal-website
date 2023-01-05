@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { DateFormatter } from "../assets/helper";
 
 export const PostCard = (props) => {
     return (
@@ -14,7 +15,7 @@ export const PostCard = (props) => {
                         <h4 className="post-date">
                             <span>Posted on: </span>
                             <span style={{ fontStyle: "italic" }}>
-                                {props.date}
+                                {DateFormatter(props.date)}
                             </span>
                         </h4>
                     </Col>

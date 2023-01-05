@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { BiArrowBack } from "react-icons/bi";
+import { DateFormatter } from "../assets/helper";
 
 export const Post = (props) => {
     const [mdFile, setMdFile] = useState("");
@@ -45,7 +46,7 @@ export const Post = (props) => {
                         <h4>
                             <span>Posted on: </span>
                             <span style={{ fontStyle: "italic" }}>
-                                {props.date}
+                                {DateFormatter(props.date)}
                             </span>
                         </h4>
                     </Col>
