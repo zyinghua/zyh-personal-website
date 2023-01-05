@@ -1,6 +1,5 @@
 import React from "react";
 import pnf from "../assets/img/404-page-not-found.gif";
-import { Footer } from "../components/Footer";
 import { Link } from "react-router-dom";
 
 export const PageNotFound = () => {
