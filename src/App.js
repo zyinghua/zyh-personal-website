@@ -7,11 +7,10 @@ import { Education } from "./components/Education";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { Posts } from "./components/Posts";
 import { Photos } from "./components/Photos";
 import { PageNotFound } from "./components/PageNotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Post } from "./components/Post";
+import { PostRoutes } from "./components/PostRoutes";
 
 function App() {
     return (
@@ -33,16 +32,7 @@ function App() {
                     }
                 />
 
-                <Route
-                    path="/posts"
-                    element={
-                        <div>
-                            <NavBar />
-                            <Posts />
-                            <Footer />
-                        </div>
-                    }
-                />
+                <Route path="/posts" element={<PostRoutes />} />
                 <Route
                     path="/photos"
                     element={
@@ -53,7 +43,6 @@ function App() {
                         </div>
                     }
                 />
-                <Route path="/posts/post" element={<Post />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </BrowserRouter>

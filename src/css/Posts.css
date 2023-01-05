@@ -14,6 +14,7 @@
     position: relative;
     cursor: pointer;
     padding-bottom: 24px;
+    margin-top: 40px;
 }
 .post-card:hover {
     transform: translateY(-1px);

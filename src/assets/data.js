@@ -164,3 +164,18 @@ export const photos = [
     require("../assets/img/photos/sydney-harbour-bridge-pigeon.jpg"),
     require("../assets/img/photos/the-twelve-apostles.jpeg"),
 ];
+
+export const posts = [
+    {
+        title: "Common Git commands",
+        date: "28-02-2022",
+        keywords: ["git", "commands"],
+        fileName: "git-commands",
+    },
+    {
+        title: "Leetcode 142 Solution with explanation",
+        date: "20-01-2022",
+        keywords: ["leetcode", "linked lists", "two pointers"],
+        fileName: "leetcode-142-linked-list-cycle-2",
+    },
+];

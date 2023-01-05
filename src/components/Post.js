@@ -1,22 +1,23 @@
 import { React, useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
-import md from "../assets/posts/leetcode-142-linked-list-cycle-2.md";
-
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
-export const Post = () => {
+export const Post = (props) => {
     const [mdFile, setMdFile] = useState("");
 
     useEffect(() => {
-        fetch(md)
+        fetch(require(`../assets/posts/${props.fileName}.md`))
             .then((res) => res.text())
             .then((text) => setMdFile(text));
     });
 
     return (
         <div className="mark-down-render">
-            <h4>Title:</h4>
-            <h4>Posted on:</h4>
+            <h4>Title: {props.title}</h4>
+            <h4>
+                <span>Posted on:</span>
+                <span style={{ fontStyle: "italic" }}>{props.date}</span>
+            </h4>
             <ReactMarkdown
                 children={mdFile}
                 components={{
