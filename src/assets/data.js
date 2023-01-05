@@ -157,11 +157,11 @@ export const projects = [
 ];
 
 export const photos = [
-    require("../assets/img/photos/bridge-pigeons.jpeg"),
+    require("../assets/img/photos/sydney-harbour-bridge-pigeon.jpg"),
     require("../assets/img/photos/melb-tram.jpg"),
     require("../assets/img/photos/opera-house.jpg"),
     require("../assets/img/photos/sunset.jpeg"),
-    require("../assets/img/photos/sydney-harbour-bridge-pigeon.jpg"),
+    require("../assets/img/photos/bridge-pigeons.jpeg"),
     require("../assets/img/photos/the-twelve-apostles.jpeg"),
 ];
 
