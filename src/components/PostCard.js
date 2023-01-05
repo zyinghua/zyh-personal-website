@@ -12,7 +12,7 @@ export const PostCard = (props) => {
                     </Col>
                     <Col sm={6} className=" text-sm-end">
                         <h4 className="post-date">
-                            <span>Posted on:</span>
+                            <span>Posted on: </span>
                             <span style={{ fontStyle: "italic" }}>
                                 {props.date}
                             </span>

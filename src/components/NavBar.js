@@ -35,7 +35,7 @@ export const NavBar = () => {
             <Container>
                 <Navbar.Brand>
                     <span>
-                        <a href="/#home" className="site-txt-logo">
+                        <a href="/" className="site-txt-logo">
                             YINGHUA ZHOU
                         </a>
                     </span>
