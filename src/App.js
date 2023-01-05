@@ -32,7 +32,7 @@ function App() {
                     }
                 />
 
-                <Route path="/posts" element={<PostRoutes />} />
+                <Route path="/posts/*" element={<PostRoutes />} />
                 <Route
                     path="/photos"
                     element={

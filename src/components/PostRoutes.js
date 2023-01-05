@@ -22,7 +22,7 @@ export const PostRoutes = () => {
             {posts.map((post) => {
                 return (
                     <Route
-                        path={`/posts/${post.fileName}`}
+                        path={`/${post.fileName}`}
                         element={<Post {...post} />}
                     />
                 );

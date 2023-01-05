@@ -15,7 +15,7 @@ export const Post = (props) => {
         <div className="mark-down-render">
             <h4>Title: {props.title}</h4>
             <h4>
-                <span>Posted on:</span>
+                <span>Posted on: </span>
                 <span style={{ fontStyle: "italic" }}>{props.date}</span>
             </h4>
             <ReactMarkdown
