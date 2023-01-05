@@ -17,7 +17,13 @@ export const Post = (props) => {
         <div className="mark-down-render">
             <Container style={{ maxWidth: "100%" }}>
                 <Row>
-                    <Col sm={6} className=" text-sm-start">
+                    <Col
+                        sm={6}
+                        className="text-sm-start"
+                        style={{
+                            marginBottom: "24px",
+                        }}
+                    >
                         <a
                             href="/posts"
                             style={{
