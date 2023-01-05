@@ -20,7 +20,14 @@ export const PostCard = (props) => {
                     </Col>
                 </Row>
                 <Row>
-                    <p>Keywords: #Linked Lists, #Two pointers, #Leetcode</p>
+                    <p>
+                        <span>Keywords: </span>
+                        {props.keywords.map((keyword) => {
+                            return (
+                                <span className="post-card-keyword">{`#${keyword}${" "}`}</span>
+                            );
+                        })}
+                    </p>
                 </Row>
             </Container>
         </Link>
