@@ -19,9 +19,10 @@ export const PostRoutes = () => {
                     </div>
                 }
             />
-            {posts.map((post) => {
+            {posts.map((post, index) => {
                 return (
                     <Route
+                        key={index}
                         path={`/${post.fileName}`}
                         element={<Post {...post} />}
                     />

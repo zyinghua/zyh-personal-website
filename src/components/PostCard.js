@@ -22,9 +22,12 @@ export const PostCard = (props) => {
                 <Row>
                     <p>
                         <span>Keywords: </span>
-                        {props.keywords.map((keyword) => {
+                        {props.keywords.map((keyword, index) => {
                             return (
-                                <span className="post-card-keyword">{`#${keyword}${" "}`}</span>
+                                <span
+                                    key={index}
+                                    className="post-card-keyword"
+                                >{`#${keyword}${" "}`}</span>
                             );
                         })}
                     </p>
