@@ -8,7 +8,7 @@ export const Post = (props) => {
     const [mdFile, setMdFile] = useState("");
 
     useEffect(() => {
-        fetch(require(`../assets/posts/git-commands.md`))
+        fetch(require(`../assets/posts/${props.fileName}.md`))
             .then((res) => res.text())
             .then((text) => setMdFile(text));
     });
