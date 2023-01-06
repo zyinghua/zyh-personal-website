@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0183f3c3.css",
-    "main.js": "/static/js/main.2ca2b20f.js",
+    "main.js": "/static/js/main.65959ea9.js",
     "static/js/529.bc3c2557.chunk.js": "/static/js/529.bc3c2557.chunk.js",
     "static/media/the-twelve-apostles.jpeg": "/static/media/the-twelve-apostles.2069d22f3b9dbc2abe12.jpeg",
     "static/media/project-box-bg.jpg": "/static/media/project-box-bg.d8b0b645d4aa3c5be00b.jpg",
@@ -32,11 +32,11 @@
     "static/media/leetcode.svg": "/static/media/leetcode.fa87fd9fdee40db78ae26dc18fe60a30.svg",
     "index.html": "/index.html",
     "main.0183f3c3.css.map": "/static/css/main.0183f3c3.css.map",
-    "main.2ca2b20f.js.map": "/static/js/main.2ca2b20f.js.map",
+    "main.65959ea9.js.map": "/static/js/main.65959ea9.js.map",
     "529.bc3c2557.chunk.js.map": "/static/js/529.bc3c2557.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0183f3c3.css",
-    "static/js/main.2ca2b20f.js"
+    "static/js/main.65959ea9.js"
   ]
 }
