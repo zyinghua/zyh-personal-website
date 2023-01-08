@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000);
+app.listen(5001); // port code you want to server to connect to locally
 
 const contactEmail = nodemailer.createTransport({
     service: "gmail",
@@ -28,7 +28,7 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", async (req, res) => {
-    const name = req.body.firstName + req.body.lastName;
+    const name = req.body.firstName + " " + req.body.lastName;
     const email = req.body.email;
     const subject = req.body.subject;
     const message = req.body.message;

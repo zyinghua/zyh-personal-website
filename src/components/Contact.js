@@ -15,7 +15,6 @@ export const Contact = () => {
 
             setIsSending(false);
             setBtnText("Send");
-            setFormDetails(formInitialDetails);
             setStatus({
                 success: false,
                 message:
@@ -34,6 +33,16 @@ export const Contact = () => {
         clearTimeout(id);
 
         return response;
+    };
+
+    const convertDictDetailsToFormData = () => {
+        const formData = new FormData();
+
+        for (const [key, value] of Object.entries(formDetails)) {
+            formData.append(key, value);
+        }
+
+        return formData;
     };
 
     const formInitialDetails = {
@@ -95,17 +104,22 @@ export const Contact = () => {
         // Send a POST request to the email server
         setIsSending(true);
 
-        let response = await fetchWithTimeout("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "Application/json;charset=utf-8",
-            },
-            body: JSON.stringify(formDetails),
-        });
+        let response = await fetchWithTimeout(
+            "http://127.0.0.1:5001/contact/",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "Application/json",
+                },
+
+                body: JSON.stringify(formDetails),
+            }
+        );
 
         setIsSending(false);
         setBtnText("Send");
         let result = await response.json();
+
         setFormDetails(formInitialDetails);
         if (result.code === 200) {
             setStatus({
