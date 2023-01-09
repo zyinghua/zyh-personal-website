@@ -35,16 +35,6 @@ export const Contact = () => {
         return response;
     };
 
-    const convertDictDetailsToFormData = () => {
-        const formData = new FormData();
-
-        for (const [key, value] of Object.entries(formDetails)) {
-            formData.append(key, value);
-        }
-
-        return formData;
-    };
-
     const formInitialDetails = {
         firstName: "",
         lastName: "",
@@ -105,13 +95,13 @@ export const Contact = () => {
         setIsSending(true);
 
         let response = await fetchWithTimeout(
-            "http://127.0.0.1:5001/contact/",
+            "https://yinghua-web-server.herokuapp.com/",
             {
                 method: "POST",
                 headers: {
                     "Content-Type": "Application/json",
                 },
-
+                mode: "cors",
                 body: JSON.stringify(formDetails),
             }
         );
